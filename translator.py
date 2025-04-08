@@ -3,6 +3,7 @@ from tkinter import ttk
 import gtts,pygame,random
 from googletrans import Translator,LANGUAGES
 
+#this dictionary contain the shortform that gtts use for converting to languange
 language_codes = {
     "Afrikaans": "af",
     "Arabic": "ar",
@@ -79,8 +80,8 @@ def data():
 
 def speech(line,d):
     tts = gtts.gTTS(text=line,lang=d)
-    k = str(random.random())
-    tts.save("output"+k+".mp3")
+    k = str(random.random()) 
+    tts.save("output"+k+".mp3")  # here random function is used to generate a unique mp3 file everytime a new audio is generated 
     playSound(k)
 
 def playSound(a):
