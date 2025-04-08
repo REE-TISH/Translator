@@ -3,7 +3,7 @@ from tkinter import ttk
 import gtts,pygame,random
 from googletrans import Translator,LANGUAGES
 
-#this dictionary contain the shortform that gtts use for converting to languange
+#this dictionary contain the shortforms that gtts use as inputs
 language_codes = {
     "Afrikaans": "af",
     "Arabic": "ar",
